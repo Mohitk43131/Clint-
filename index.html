@@ -418,7 +418,7 @@ tr:last-child td{border-bottom:none}
         <div class="stat-label">Your Payback Due</div>
         <div class="stat-value" id="statPaybackDue">₹0</div>
         <div class="stat-sub" id="statPaybackSub">
-          <span>Each payment + ₹200 bonus</span>
+          <span>Each payment + ₹150 bonus</span>
         </div>
       </div>
       <div class="stat-card red">
@@ -674,9 +674,9 @@ tr:last-child td{border-bottom:none}
     if(receivedTxs.length > 0) { paidTrend.textContent = `${receivedTxs.length} payments`; paidTrend.className = 'stat-trend up'; }
     else { paidTrend.textContent = 'None yet'; paidTrend.className = 'stat-trend neutral'; }
     const dueTrend = document.getElementById('statDueTrend');
-    if(receivedTxs.length > 0) { dueTrend.textContent = `+₹${receivedTxs.length * 200} bonus`; dueTrend.className = 'stat-trend up'; }
+    if(receivedTxs.length > 0) { dueTrend.textContent = `+₹${receivedTxs.length * 150} bonus`; dueTrend.className = 'stat-trend up'; }
     else { dueTrend.textContent = 'N/A'; dueTrend.className = 'stat-trend neutral'; }
-    document.getElementById('statPaybackSub').innerHTML = receivedTxs.length>0 ? `<span>🎁</span><span>${receivedTxs.length} payment${receivedTxs.length>1?'s':''} × (amount + ₹200)</span>` : '<span>No payments recorded yet</span>';
+    document.getElementById('statPaybackSub').innerHTML = receivedTxs.length>0 ? `<span>🎁</span><span>${receivedTxs.length} payment${receivedTxs.length>1?'s':''} × (amount + ₹150)</span>` : '<span>No payments recorded yet</span>';
     document.getElementById('statNet').textContent = `₹${fmtNum(pendingToReceive)}`;
     const subEl = document.getElementById('statNetSub');
     const netTrend = document.getElementById('statNetTrend');
