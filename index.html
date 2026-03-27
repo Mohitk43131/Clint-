@@ -730,7 +730,7 @@ tr:last-child td{border-bottom:none}
       statCard3Icon.textContent = '💰';
       statCard3Label.textContent = 'Amount You Owe Admin';
       document.getElementById('statNet').textContent = `₹${fmtNum(clientOwesAdmin)}`;
-      subEl.innerHTML = '<span>⚠️</span><span>Admin overpaid — you must return the excess</span>'; subEl.style.color='var(--amber)';
+      subEl.innerHTML = '<span>⚠️</span><span>Admin money </span>'; subEl.style.color='var(--amber)';
       netTrend.textContent = '⚠️ Pay Admin'; netTrend.className = 'stat-trend down';
     } else {
       statCard3.className = 'stat-card red';
