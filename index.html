@@ -700,7 +700,7 @@ tr:last-child td{border-bottom:none}
 
     document.getElementById('paymentBreakdown').innerHTML = `
       <div class="breakdown-item"><div class="breakdown-dot" style="background:var(--emerald)"></div><div class="breakdown-info"><div class="breakdown-label">Your Payments</div><div class="breakdown-value">${receivedTxs.length} × payments</div></div></div>
-      <div class="breakdown-item"><div class="breakdown-dot" style="background:var(--amber)"></div><div class="breakdown-info"><div class="breakdown-label">Bonus Added</div><div class="breakdown-value">₹${fmtNum(receivedTxs.length * 200)}</div></div></div>
+      <div class="breakdown-item"><div class="breakdown-dot" style="background:var(--amber)"></div><div class="breakdown-info"><div class="breakdown-label">Bonus Added</div><div class="breakdown-value">₹${fmtNum(receivedTxs.length * 150)}</div></div></div>
       <div class="breakdown-item"><div class="breakdown-dot" style="background:var(--accent)"></div><div class="breakdown-info"><div class="breakdown-label">Received Back</div><div class="breakdown-value">${sentTxs.length} payments</div></div></div>
       <div class="breakdown-item"><div class="breakdown-dot" style="background:var(--red)"></div><div class="breakdown-info"><div class="breakdown-label">Still Pending</div><div class="breakdown-value">₹${fmtNum(pendingToReceive)}</div></div></div>`;
 
